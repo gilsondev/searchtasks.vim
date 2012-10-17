@@ -34,7 +34,7 @@ function s:SearchTasksGrep(directory)
   endif
 
   for task in g:searchtasks_list
-    execute 'grepadd ' . task . ' ' . a:directory
+    execute 'silent :grepadd ' . task . ' ' . a:directory
   endfor
 
   " show results
@@ -42,7 +42,7 @@ function s:SearchTasksGrep(directory)
 endfunction
 " }}}
 
-if has("grepadd")
+if exists("grepadd") || v:version > 700
   command -nargs=1 SearchTasksGrep call s:SearchTasksGrep('<args>')
 endif
 command -nargs=1 SearchTasks call s:SearchTasks('<args>')
