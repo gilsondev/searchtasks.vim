@@ -22,6 +22,9 @@ This plugin help and do a scan of all kinds of comments that matches the labels 
 
 " Search in directory app/ in files .py
 :SearchTasks app/*.py
+
+" Search with grep
+:SearchTasksGrep **/*.php
 ```
 
 ## Configuration
