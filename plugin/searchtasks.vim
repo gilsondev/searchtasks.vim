@@ -42,7 +42,7 @@ function s:SearchTasksGrep(directory)
 endfunction
 " }}}
 
-if has("grepadd"):
+if has("grepadd")
   command -nargs=1 SearchTasksGrep call s:SearchTasksGrep('<args>')
 endif
 command -nargs=1 SearchTasks call s:SearchTasks('<args>')
