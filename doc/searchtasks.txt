@@ -33,6 +33,14 @@ GENERAL COMMANDS				*searchtasks-commands* *searchtasks*
     :SearchTasks *.c
 <
 
+						*searchtasks-:SearchTasksGrep*
+:SearchTasksGrep <directory>	The only global command.  Search occurrences with :grep in directory and list window matches. For example: >
+
+    :SearchTasksGrep /home/user/projects/app/*.py
+    :SearchTasksGrep **/*.php
+    :SearchTasksGrep *.c
+<
+
 
 CONFIGURATIONS					*searchtasks-configurations* *searchtasks*
 
