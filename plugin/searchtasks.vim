@@ -2,12 +2,15 @@
 " Maintainer:   Gilson Filho <http://gilsondev.com>
 " Version:      1.0
 
-if exists("g:searchtasks_list") || &cp || v:version < 700
+if exists("g:searchtasks_loaded") || &cp || v:version < 700
   finish
 endif
 
-let g:searchtasks_list=["TODO", "FIXME", "XXX"]
+let g:searchtasks_loaded=1
 
+if !exists("g:searchtasks_list")
+  let g:searchtasks_list=["TODO", "FIXME", "XXX"]
+endif
 
 " Search tasks {{{
 function s:SearchTasks(directory)
