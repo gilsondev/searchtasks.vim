@@ -15,15 +15,15 @@ INTRODUCTION					*searchtasks-introduction* *searchtasks*
 
 When you develop, it is likely that inserts comments that serves
 as a reminder of what needs to improve, implement, or withdraw future.
-You also have situations where you need to put a comment from a hack 
+You also have situations where you need to put a comment from a hack
 who made or an encoding that need a better fix.
 
-For it is common to use labels TODO, FIXME and XXX in comments. 
+For it is common to use labels TODO, FIXME and XXX in comments.
 But how does all of them to look in a directory containing your source code?
 
 This plugin help and do a scan of all kinds of comments that matches the labels used.
 
-GENERAL COMMANDS				*searchtasks-commands* *searchtasks*
+GENERAL COMMANDS				*searchtasks-commands*
 
 						*searchtasks-:SearchTasks*
 :SearchTasks <directory>	The only global command.  Search occurrences  in directory and list window matches. For example: >
@@ -42,7 +42,7 @@ GENERAL COMMANDS				*searchtasks-commands* *searchtasks*
 <
 
 
-CONFIGURATIONS					*searchtasks-configurations* *searchtasks*
+CONFIGURATIONS					*searchtasks-configurations*
 
 If you want to change or enter new labels for searchtask search, just enter the following in your configuration .vimrc: >
 
